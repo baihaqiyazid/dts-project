@@ -1,0 +1,51 @@
+{% include('header.html') %}
+<section class="h-100 w-100" style="box-sizing: border-box; background-color: white">
+  <div class="content-4-1 d-flex flex-column align-items-center h-100 flex-lg-row"
+    style="font-family: 'Poppins', sans-serif">
+    <div class="position-relative d-none d-lg-block h-100 width-right">
+      <img class="position-absolute img-fluid centered" src="../static/img/DTS.jpg" alt="none" width="500" height="500" />
+    </div>
+    <div class="d-flex mx-auto align-items-left justify-content-right width-right mx-lg-0">
+      <div class="mx-lg-0 mx-auto">
+        <h3 class="title-text">Traffic Congestion Prediction</h3>
+        <p class="caption-text">Please fill in the details below</p>
+        <form style="margin-top: 1.5rem" action="/" method="POST">
+          <!-- SPEED AVERAGE -->
+          <div style="margin-bottom: 1.75rem">
+            <label for="" class="d-block input-label">Speed Average (Miles Per Hour)</label>
+            <div class="d-flex w-100 div-input">
+              <input class="input-field border-0" type="number" name="speedAvg" id="" placeholder="Your Speed Average"
+                autocomplete="on" step="0.0001" required />
+            </div>
+          </div>
+          <!-- SPEED STDDEV -->
+          <div style="margin-bottom: 1.75rem">
+            <label for="" class="d-block input-label">Speed StdDev</label>
+            <div class="d-flex w-100 div-input">
+              <input class="input-field border-0" type="number" name="speedStd" id="" placeholder="Your Speed StdDev"
+                autocomplete="on" step="0.0001" required />
+            </div>
+          </div>
+          <!-- SECOND IN ZONE AVERAGE -->
+          <div style="margin-bottom: 1.75rem">
+            <label for="" class="d-block input-label">Seconds in Zone Average</label>
+            <div class="d-flex w-100 div-input">
+              <input class="input-field border-0" type="number" name="secondZoneAvg" id="" placeholder="Your Seconds in Zone StdDev"
+                autocomplete="on" step="0.0001" required />
+            </div>
+          </div>
+          <!-- SECOND IN ZONE STDDEV -->
+          <div style="margin-bottom: 1.75rem">
+            <label for="" class="d-block input-label">Seconds in Zone StdDev</label>
+            <div class="d-flex w-100 div-input">
+              <input class="input-field border-0" type="number" name="secondZoneStd" id="" placeholder="Your Seconds in Zone StdDev"
+                autocomplete="on" step="0.0001" required />
+            </div>
+          </div>
+          <button class="btn btn-fill text-white d-block w-100" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% include('footer.html') %}
